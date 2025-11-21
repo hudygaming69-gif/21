@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Układ semantyczny</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header, main, footer, section {
+        border: 1px solid #000;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    header, footer {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    main {
+        margin: 10px;
+    }
+
+    
+    main > section {
+        display: flex;
+        gap: 10px;
+        padding: 0;
+        border: none;
+    }
+
+    article {
+        flex: 1;
+        border: 1px solid #000;
+        min-height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+
+</style>
+
+</head>
+<body>
+
+<header>
+    Blok nagłówkowy
+</header>
+
+<main>
+    <h2 style="margin:0; font-size:16px;">Blok główny</h2>
+
+    <section>
+        <article>sekcja<br>lewa</article>
+        <article>sekcja<br>prawa</article>
+    </section>
+</main>
+
+<footer>
+    Blok stopki
+</footer>
+
+</body>
+</html>
